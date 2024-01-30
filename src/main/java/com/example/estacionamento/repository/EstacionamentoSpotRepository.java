@@ -7,5 +7,7 @@ import com.example.estacionamento.models.EstacionamentoSpotModel;
 
 @Repository
 public interface EstacionamentoSpotRepository extends JpaRepository<EstacionamentoSpotModel, String> {
-    
+
+    boolean existsByplaca(String placa);
+    boolean existsBycpf(String cpf);
 } 
